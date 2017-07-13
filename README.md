@@ -18,15 +18,16 @@ https://drive.google.com/file/d/0Bx3iDDAtxxI4YW1YNmp3b2FoVWc
 
 The above instance has an account named ann with password: 'a'
 
-In that account you should find a recent copy of Anaconda Python.
+In that account you should find a copy of Anaconda Python 4.4.0 which contains Python 3.6.1
 
 Also that account should have access to the Heroku Toolbelt.
 
-The Heroku Toolbelt is a shell command: heroku
+The Heroku Toolbelt is a shell command named: 'heroku'
 
 After I boot the above Ubuntu instance and login as ann, I run some shell commands:
 
 ```sh
+cd ~ann
 git clone https://github.com/danbikle/dj101
 cd dj101
 
@@ -34,10 +35,16 @@ pip install -r requirements.txt
 
 python manage.py migrate
 python manage.py collectstatic
-gunicorn -b 0.0.0.0 gettingstarted.wsgi
+gunicorn gettingstarted.wsgi
 ```
 
-Now, your app should be running on http://localhost:5000
+Above, notice the pip command.
+
+Usually I use conda instead of pip.
+
+For dj101, I prefer to use pip (because conda cannot install dj-database-url==0.4.1).
+
+Now, you can browse http://localhost:8000
 
 ## Deploy to Heroku
 
@@ -56,3 +63,5 @@ heroku open
 For more information about using Python on Heroku, study the URL below:
 
 https://devcenter.heroku.com/categories/python
+
+If you have questions, e-me: bikle101 , gmail
