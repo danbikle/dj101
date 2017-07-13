@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "name": "dj101",
+  "description": "This is a django app, easily deployed to Heroku.",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
-  "keywords": ["python", "django" ],
+  "repository": "https://github.com/danbikle/dj101",
+  "keywords": ["python", "heroku","django" ],
   "addons": [ "heroku-postgresql" ]
 }
