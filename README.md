@@ -1,44 +1,58 @@
-# python-getting-started
+# https://github.com/danbikle/dj101
 
-A barebones Python app, which can easily be deployed to Heroku.
+This is a django app, easily deployed to Heroku.
 
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+This app was created from [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
 
 ## Running Locally
 
-Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
+I like to run this app inside of a VirtualBox instance.
+
+To do that, I first install VirtualBox on my laptop:
+
+https://www.virtualbox.org/wiki/Downloads
+
+Next I download a .ova file (Ubuntu 16.04 VirtualBox Instance 9.7 GB):
+
+https://drive.google.com/file/d/0Bx3iDDAtxxI4YW1YNmp3b2FoVWc
+
+The above instance has an account named ann with password: 'a'
+
+In that account you should find a recent copy of Anaconda Python.
+
+Also that account should have access to the Heroku Toolbelt.
+
+The Heroku Toolbelt is a shell command: heroku
+
+After I boot the above Ubuntu instance and login as ann, I run some shell commands:
 
 ```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
+git clone https://github.com/danbikle/dj101
+cd dj101
 
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 
-$ createdb python_getting_started
-
-$ python manage.py migrate
-$ python manage.py collectstatic
-
-$ heroku local
+python manage.py migrate
+python manage.py collectstatic
+gunicorn -b 0.0.0.0 gettingstarted.wsgi
 ```
 
-Now, your app should be running on [localhost:5000](http://localhost:5000/).
+Now, your app should be running on http://localhost:5000
 
-## Deploying to Heroku
+## Deploy to Heroku
+
+I use the shell commands below to deploy to heroku:
 
 ```sh
-$ heroku create
-$ git push heroku master
+heroku create
+git push heroku master
 
-$ heroku run python manage.py migrate
-$ heroku open
+heroku run python manage.py migrate
+heroku open
 ```
-or
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Documentation
 
-For more information about using Python on Heroku, see these Dev Center articles:
+For more information about using Python on Heroku, study the URL below:
 
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
+https://devcenter.heroku.com/categories/python
