@@ -12,9 +12,9 @@ To do that, I first install VirtualBox on my laptop:
 
 https://www.virtualbox.org/wiki/Downloads
 
-Next I download a .ova file (Ubuntu 16.04 VirtualBox Instance 9.7 GB):
+Next I download a file: (ub16jul21.ova, Ubuntu 16.04 VirtualBox Instance 10 GB):
 
-https://drive.google.com/file/d/0Bx3iDDAtxxI4YW1YNmp3b2FoVWc
+https://drive.google.com/file/d/0Bx3iDDAtxxI4MmNNLXM4RTZvYTA
 
 The above instance has an account named ann with password: 'a'
 
@@ -48,9 +48,17 @@ Now, you can browse http://localhost:8000
 
 ## Deploy to Heroku
 
+I start this effort by creating an account at heroku.com using only an e-mail address.
+
+As of 2017-07-19, heroku.com requires only an e-mail address to create an account.
+
+After I have a heroku account, I am ready to do the steps below.
+
 I use the shell commands below to deploy to heroku:
 
 ```sh
+heroku whoami
+heroku auth:login
 heroku create
 git push heroku master
 
