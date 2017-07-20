@@ -1,0 +1,17 @@
+nouns.txt
+
+This file contains a list of nouns related to Django, perhaps some verbs too.
+
+static html file
+template html file
+app.json
+db.sqlite3
+.gitignore
+gunicorn
+gunicorn.bash
+manage.py
+Procfile
+requirements.txt
+runtime.txt
+gettingstarted/ folder
+hello/          folder
