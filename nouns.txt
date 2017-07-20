@@ -28,7 +28,7 @@ dj101/hello/templates/index.html
 {% load staticfiles %}
 <img src="{% static 'lang-logo.png'%}">
 {% block content %}{% endblock %}
-__init__.py
+{% include 'dan.html' %}
 
 dj101/app.json
 dj101/db.sqlite3
@@ -38,3 +38,5 @@ dj101/Procfile
 dj101/gettingstarted/settings.py
 
 gunicorn
+
+__init__.py
