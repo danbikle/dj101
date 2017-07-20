@@ -8,4 +8,32 @@ How to enhance gunicorn.bash so gunicorn will listen on port 11234?
 
 How to enhance gunicorn.bash to restart workers when code changes?
 
+What is the "Getting Started Guide"?
 
+Why use Django instead of Flask?
+
+Which version of Django should I use with dj101?
+
+Where can I find a list of repositories which contain Django apps?
+
+Here is a short list:
+  - https://github.com/heroku/python-getting-started
+  - https://github.com/django/djangoproject.com
+  - https://github.com/danbikle/dj101
+  - https://github.com/lucastheis/django-publications
+  - https://github.com/djangopackages/djangopackages
+  - https://www.django-cms.org/en/
+  - http://djedi-cms.org
+  - https://github.com/feincms/feincms
+  - https://github.com/opps/opps
+  - https://github.com/wagtail/wagtail
+  - https://github.com/fusionbox/django-widgy
+  - https://github.com/wooey/wooey
+  - https://github.com/django-oscar/django-oscar
+  - https://github.com/awesto/django-shop
+  - https://github.com/agiliq/merchant
+  - https://github.com/shuup/shuup
+  - http://www.google.com/search?q=django+website+github
+  - http://www.google.com/search?q=django+projects+for+beginners
+  - http://www.google.com/search?q=best+open+source+django+projects
+  - http://www.google.com/search?q=django+open+source+projects+github
