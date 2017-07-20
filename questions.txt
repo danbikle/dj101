@@ -1,6 +1,10 @@
 ~/dj101/questions.txt
 
+How was http://github.com/danbikle/dj101 deployed to http://dj101.herokuapp.com ?
+
 If I place questions.txt in the top level folder of dj101, will that file cause a malfunction?
+
+In dj101 what is gunicorn.bash? Why is it in dj101?
 
 How to enhance gunicorn.bash so gunicorn will listen on all interfaces instead of 127.0.0.1?
 
@@ -37,3 +41,47 @@ Here is a short list:
   - http://www.google.com/search?q=django+projects+for+beginners
   - http://www.google.com/search?q=best+open+source+django+projects
   - http://www.google.com/search?q=django+open+source+projects+github
+
+In dj101 what is app.json? Why is it in dj101?
+
+In dj101 what is manage.py? Why is it in dj101?
+In dj101 what is Procfile? Why is it in dj101?
+In dj101 what is requirements.txt? Why is it in dj101?
+In dj101 what is runtime.txt? Why is it in dj101?
+
+Why is the structure of gettingstarted folder similar to structure of hello folder?
+In dj101 what does hello folder do?
+In dj101 what does gettingstarted folder do?
+
+The HTML served by dj101.herokuapp.com home page resides where?
+
+How does dj101/hello/templates/base.html relate to dj101/hello/templates/index.html ?
+
+What does this file do:
+  dj101/hello/templates/index.html
+  ??
+
+What does this file do:
+  dj101/hello/templates/base.html
+  ??
+
+What does this file do:
+  dj101/hello/templates/db.html
+  ??
+
+What does this syntax do:
+  {% extends "base.html" %}
+  ??
+  
+What does this syntax do:
+  {% load staticfiles %}
+  ??
+  
+In base.html, what does this syntax do:
+  {% block content %}{% endblock %}
+  ??
+  
+In index.html, what does this syntax do:
+  {% block content %}
+  ??
+  
