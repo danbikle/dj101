@@ -2,16 +2,39 @@ nouns.txt
 
 This file contains a list of nouns related to Django, perhaps some verbs too.
 
-static html file
+dj101/requirements.txt
+
+dj101/gunicorn.bash
+dj101/manage.py
+
+dj101/runtime.txt
+dj101/gettingstarted/  folder
+dj101/hello/           folder
+
+dj101/gettingstarted/static/static.html
+dj101/hello/static/static2.html
+
+static   html file
 template html file
-app.json
-db.sqlite3
-.gitignore
+
+dj101/gettingstarted/urls.py
+
+dj101/hello/templates/ folder
+
+dj101/hello/templates/base.html
+dj101/hello/templates/index.html
+
+{% extends "base.html" %}
+{% load staticfiles %}
+<img src="{% static 'lang-logo.png'%}">
+{% block content %}{% endblock %}
+__init__.py
+
+dj101/app.json
+dj101/db.sqlite3
+dj101/.gitignore
+dj101/Procfile
+
+dj101/gettingstarted/settings.py
+
 gunicorn
-gunicorn.bash
-manage.py
-Procfile
-requirements.txt
-runtime.txt
-gettingstarted/ folder
-hello/          folder

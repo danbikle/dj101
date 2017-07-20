@@ -76,7 +76,10 @@ What does this syntax do:
 What does this syntax do:
   {% load staticfiles %}
   ??
-  
+What does this syntax do:
+<img src="{% static 'lang-logo.png'%}">
+??
+
 In base.html, what does this syntax do:
   {% block content %}{% endblock %}
   ??
