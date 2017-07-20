@@ -1,5 +1,13 @@
 ~/dj101/questions.txt
 
+What are the main features of Django?
+  - It serves static HTML files
+  - It routes URL paths to templates
+  - It reuses HTML syntax between templates
+  - It passes data between Python and templates
+  - It passes data between Python and databases
+  
+
 How was http://github.com/danbikle/dj101 deployed to http://dj101.herokuapp.com ?
 
 If I place questions.txt in the top level folder of dj101, will that file cause a malfunction?

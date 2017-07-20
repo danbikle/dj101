@@ -25,10 +25,10 @@ dj101/hello/templates/base.html
 dj101/hello/templates/index.html
 
 {% extends "base.html" %}
-{% load staticfiles %}
-<img src="{% static 'lang-logo.png'%}">
 {% block content %}{% endblock %}
 {% include 'dan.html' %}
+{% load staticfiles %}
+<img src="{% static 'lang-logo.png'%}">
 
 dj101/app.json
 dj101/db.sqlite3
