@@ -57,6 +57,7 @@ After I have a heroku account, I am ready to do the steps below.
 I use the shell commands below to deploy to heroku:
 
 ```sh
+cd ~ann/dj101
 heroku whoami
 heroku auth:login
 heroku create
